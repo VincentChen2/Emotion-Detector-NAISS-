@@ -1,7 +1,9 @@
 import cv2
 import os
 
-cam = cv2.VideoCapture(0).set(4, 100) #Sets up camera capture using front-facing camera
+cam = cv2.VideoCapture(1) #Sets up camera capture using front-facing camera
+cam.set(3, 100) #Sets Width
+cam.set(4, 100) #Sets Height
 number_of_images, current_images = int(input('Input Number of Images: ')), 0
 folder_path = input('Input Folder Path: ')
 
